@@ -1,0 +1,244 @@
+{% extends 'main.html' %}
+{% block content %}
+{% if message %}
+    <div class="alert alert-danger">{{ message }}</div>
+{% endif %}
+<style>
+body {
+    font-family: Cambria;
+    height: 100%;
+    /* background-image: linear-gradient(#21787c, #81288f); */
+    /* background-image: linear-gradient(rgb(165 221 198),rgb(41 129 141), rgb(121 51 166)); */
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+}
+h1 {
+  text-align: center;
+}
+
+
+.card{
+    border: 1px solid rgb(0 0 0);
+    box-shadow: 0 0 10px black;
+    background-color: rgb(0 0 0);
+    color: rgb(245 222 179);
+} 
+body > main > div > div > div > div:nth-child(8) > div, body > main > div > div > div > div:nth-child(10) > div, body > main > div > div > div > div:nth-child(12) > div, body > main > div > div > div > div:nth-child(14) > div, body > main > div > div > div > div:nth-child(16) > div{
+    border: 1px solid rgb(0 0 0);
+    box-shadow: 0 0 10px black;
+    background-color: rgb(23 162 184);
+    color: rgb(245 222 179);
+    border: 5px solid rgb(245 222 179);
+
+}
+
+body > main > div > div > div{
+    border: 1px solid rgb(0 0 0);
+    box-shadow: 0 0 10px black;
+    background-color: rgb(0 0 0);
+    color: rgb(245 222 179);
+
+}
+
+#services {
+    padding: 30px 0;
+  }
+  
+  .services-list {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  
+  /* #services h2{
+    color:#ffee54d2;
+  } */
+  /* .services-list i{
+    color: #ffee54;
+  } */
+  
+  .services-list div {
+  
+    background: #292828;
+    padding: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.2s, ttransform 0.9s;
+  
+  }
+  
+  .services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #ffee54d2;
+  }
+  
+  .services-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  .services-list div:hover {
+    background: rgb(23 162 184);
+  
+    transform: translateY(-10px);
+    /*color: black;*/
+    color: rgb(255, 255, 255);
+  
+  }
+ 
+  .services-list div h5,p,ul{
+    color: white;
+  }
+  
+  .services-list div h2 {
+    color: #17a2b8;
+  }
+  .services-list div:hover h2 {
+    color: rgb(77, 11, 118);
+  }
+  .services-list div:hover h5 {
+    color: rgb(0, 0, 0);
+  }
+  .services-list div:hover p {
+    color: rgb(0, 0, 0);
+  }
+  .services-list div:hover ul {
+    color: rgb(0, 0, 0);
+  }
+  .services-list div:hover hr {
+    color: white;
+  }
+
+  .services-list div:hover h2 {
+    color: rgb(77, 11, 118);
+  }
+  
+  
+  
+  .services-list div hr{
+    background-color: rgb(245 222 179);
+  }
+  
+
+
+</style>
+
+
+
+<div id="services">
+    <div class="container">
+      <h1 class="subtitle">Multi-Disease Prediction</h1>
+      <div class="services-list">
+
+        
+  
+        <div>
+            <i class="fa-solid fa-kit-medical"></i>
+          <h2>Diabetes</h2>
+          <p>Diabetes mellitus refers to a group of diseases that affect how your body uses blood sugar (glucose). Glucose is vital to your health because it's an important source of energy for the cells that make up your muscles and tissues. It's also your brain's main source of fuel. The underlying cause of diabetes varies by type. But, no matter what type of diabetes you have, it can lead to excess sugar in your blood. Too much sugar in your blood can lead to serious health problems.</p> <hr>
+
+          <h5>Symptoms</h5>
+                <ul>
+                    <li>Increased thirst</li>
+                    <li>Frequent urination</li>
+                    <li>Extreme hunger</li>
+                    <li>Unexplained weight loss</li>
+                    <li>Blurred vision</li>
+                </ul>
+          <!-- <a href="#">Learn More</a> -->
+        </div>
+       
+        <div>
+            <i class="fa-solid fa-notes-medical"></i>
+  
+          <h2>Breast Cancer </h2> 
+          <p>Breast cancer is a type of cancer that starts in the breast. It can start in one or both breasts. After skin cancer, breast cancer is the most common cancer diagnosed in women in the United States. Breast cancer can occur in both men and women, but it's far more common in women.</p> <hr>
+                <h5>Symptoms</h5>
+                <ul>
+                    <li>New lump in the breast or underarm (armpit)</li>
+                    <li>Thickening or swelling of part of the breast.</li>
+                    <li>Irritation or dimpling of breast skin</li>
+                    <li>Redness or flaky skin in the nipple area or the breast</li>
+                    <li>Pulling in of the nipple or pain in the nipple area</li>
+                </ul>
+        </div>
+
+        <div>
+         
+            <i class="fa-solid fa-heart-pulse"></i>
+            
+            <h2>Heart/ Cardiovascular Disease</h2>
+            <p>Cardiovascular disease (heart disease) refers to a group of diseases that affect the heart and blood vessels of your body. These diseases can affect one or many parts of your heart and /or blood vessels. A person may be symptomatic (physically experience the disease) or be asymptomatic (not feel anything at all).</p> <hr>
+                  <h5>Symptoms</h5>
+                  <ul>
+                      <li>Pounding or racing heart (palpitations)</li>
+                      <li>Chest pain</li>
+                      <li>Sweating</li>
+                      <li>Lightheadedness</li>
+                      <li>Shortness of breath</li>
+                  </ul>
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+    
+            
+
+          <div>
+            <i class="fa-solid fa-mosquito"></i>
+    
+            <h2>Malaria </h2> 
+            <p>Malaria is a serious disease that spreads when you’re bitten by a mosquito infected by tiny parasites. When it bites, the mosquito injects malaria parasites into your bloodstream. Malaria is caused by the parasites, not by a virus or by a type of bacterium. If it isn’t treated, malaria can cause severe health problems such as seizures, brain damage, trouble breathing, organ failure and death.</p> <hr>
+            <h5>Symptoms</h5>
+            <ul>
+                <li>Fever and sweating</li>
+                <li>Chills that shake your whole body</li>
+                <li>Headache and muscle aches</li>
+                <li>Fatigue</li>
+                <li>Diarrhea, nausea and vomiting</li>
+            </ul>
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+
+          <div>
+            <i class="fa-solid fa-lungs"></i>
+    
+            <h2>Pneumonia </h2> 
+            <p>Pneumonia is an infection in one or both of your lungs caused by bacteria, viruses or fungi. When there is an infection in the lungs, several things happen, including:</p> <hr>
+                <ul style="text-decoration: none;">
+                    <li>Your airways swell (become inflamed)</li>
+                    <li>The air sacs in the lungs fill with mucus and other fluids</li>
+                </ul>
+                <h5>Symptoms</h5>
+                <ul>
+                    <li>High fever (up to 105° F)</li>
+                    <li>Tiredness (fatigue)</li>
+                    <li>Cough with mucus (might be greenish in color or contain a small amount of blood)</li>
+                    <li>Muscle pain</li>
+                    <li>Sore throat</li>
+                </ul>
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+  
+  
+      </div>
+  
+    </div>
+  </div>
+
+
+
+{% endblock %}
